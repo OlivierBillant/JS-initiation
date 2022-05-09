@@ -68,3 +68,31 @@ if(surveillance || (mer = "calme" && drapeau != "rouge")){
     console.log("la baignade est autorisée si : la plage est surveillée" 
     +" sans surveillance elle  la mer est calme ET le drapeau est vert");
 }
+
+//Boucles et Tableau
+let monTableau = ["Printemps", "Ete", "Automne", "Hiver"];
+
+for(let i = 0; i < monTableau.length; i++){
+    console.log(monTableau[i]);
+}
+
+monTableau.push("toto");
+for(let i = 0; i < monTableau.length; i++){
+    console.log(monTableau[i]);
+}
+
+//Fonctions
+function afficherTableau(){
+    for(let i = 0; i < monTableau.length; i++){
+        console.log(monTableau[i]);
+    } 
+}
+
+monTableau.push("tata");
+afficherTableau();
+
+function direBonjour(prenom){
+    console.log("Bonjour "+ prenom +" comment ca va?");
+}
+direBonjour("Olo");
+
